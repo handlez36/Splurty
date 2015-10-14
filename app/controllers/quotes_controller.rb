@@ -8,4 +8,17 @@ class QuotesController < ApplicationController
 	def new
 		@quote = Quote.new
 	end
+
+	def create
+		# Database call to create a quote using the Quote model
+		Quote.create(quote_params)
+		redirect_to root_path
+	end
+
+	def quote_params
+		# Pull the values 'saying' and 'author' from the quote form
+		# Adds a bit of security by only permitting 'saying' and 'author' to be pulled from the form
+		params.require(:quote).permit(:saying, :author)
+	end
+
 end
