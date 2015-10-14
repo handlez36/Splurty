@@ -1,3 +1,5 @@
+/* @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz); */
+
 .clear {
 	clear: both;
 }
@@ -38,6 +40,7 @@
 	color: black;
 	font-size: 25px;
 	border-bottom: 1px solid #333333;
+    font-family: '20_dbregular', sans-serif;
 }
 
 header {
@@ -46,4 +49,13 @@ header {
 
 hr {
 	clear:both;
+}
+
+h1 {
+	font-family: '20_dbregular', sans-serif;
+    font-size: 48px;
+}
+
+h2 {
+	font-family: '20_dbregular', sans-serif;
 }
