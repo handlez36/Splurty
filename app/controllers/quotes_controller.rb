@@ -4,11 +4,6 @@ class QuotesController < ApplicationController
 		@quote = Quote.order("RANDOM()").first
 	end
 
-	# New action to map to the HTTP actions automatically created within our route
-	def new
-		@quote = Quote.new
-	end
-
 	def create
 		# Database call to create a quote using the Quote model
 		@quote = Quote.create(quote_params)
