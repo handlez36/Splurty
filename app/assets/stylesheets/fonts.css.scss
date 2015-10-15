@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: '20_dbregular';
-    src: url('/assets/20db-webfont.eot');
-    src: url('/assets/20db-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/20db-webfont.woff2') format('woff2'),
-         url('/assets/20db-webfont.woff') format('woff'),
-         url('/assets/20db-webfont.ttf') format('truetype'),
-         url('/assets/20db-webfont.svg#20_dbregular') format('svg');
+    src: font-url('/assets/20db-webfont.eot');
+    src: font-url('/assets/20db-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('/assets/20db-webfont.woff2') format('woff2'),
+         font-url('/assets/20db-webfont.woff') format('woff'),
+         font-url('/assets/20db-webfont.ttf') format('truetype'),
+         font-url('/assets/20db-webfont.svg#20_dbregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
