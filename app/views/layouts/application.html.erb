@@ -41,7 +41,11 @@
 	      </div>
 	      <div class="modal-body">
 	      	<%= simple_form_for @quote do |f| %>
-	      	<% end %>
+            	<%= f.input :saying %>
+            	<%= f.input :author %>
+            	<br />
+            	<%= f.submit 'Create', :class => 'btn btn-danger' %>
+          	<% end %>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
