@@ -100,5 +100,19 @@ h2 span {
 @media (max-width: 750px) {
     .footer-blurb {
         text-align: left;
+        padding-top: 20px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 span {
+        font-size: 18px;
+        padding-bottom: 10px;
     }
 }
