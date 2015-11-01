@@ -2,7 +2,8 @@ require 'test_helper'
 
 class QuotesControllerTest < ActionController::TestCase
   test "quote show page" do
-    quote = Quote.create(:author=>'Brandon McLean', :saying => 'Like a boss')
+    #quote = Quote.create(:author=>'Brandon McLean', :saying => 'Like a boss')
+    quote = FactoryGirl.create(:quote)
     get :show, :id => quote.id
     assert_response :success
    end
